@@ -9,12 +9,19 @@ Usage:
 :- consult(gilps). %load gilps
 
 % required settings
+
 :- set(engine, propargolem).
+
 :- set(theory_construction, incremental).
+
 :- set(clause_evaluation, left_to_right).
+
 :- set(progolem_mode, pairs).
+
 :- set(useneg, true).
+
 :- set(max_neg_depth, 1). % Counting starts from 0, so in this case two levels of exceptions will be considered.
+
 :- set(noise, 1).
 
 :- read_problem('datasets/testML.pl').
